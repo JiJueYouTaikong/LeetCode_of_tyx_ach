@@ -1,4 +1,4 @@
-from functools import cache
+from functools import cache   # >=3.9
 class Solution:
     def minDistance(self,word1,word2):
         
@@ -16,7 +16,7 @@ class Solution:
             注意：i和j是下标，所以＝0时仍能进行不同条件下的递归处理，所以边界应该是<0
 
             T：O(mn)
-            S: O(mn)
+            S: O(mn)（缓存和递归栈）
             '''
 
             # 边界
