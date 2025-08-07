@@ -8,6 +8,9 @@ class Solution:
         :param nums:
         :param k:
         :return:
+        
+        T: O(n)
+        S: O(1)      递归实现时空间复杂度为 O(logn)   循环（迭代）实现O(1)
         '''
 
         def partition(nums, left, right):
