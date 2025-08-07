@@ -14,6 +14,9 @@ class Solution:
             2. 不同条件下的递归代码（递归体）
 
             注意：i和j是下标，所以＝0时仍能进行不同条件下的递归处理，所以边界应该是<0
+
+            T：O(mn)
+            S: O(mn)
             '''
 
             # 边界
@@ -22,6 +25,7 @@ class Solution:
             elif i < 0:
                 return j + 1
             
+            # ====递归体 ====
             # 情况1：当前字符相同
             if word1[i] == word2[j]:
                 return dfs(i-1,j-1)
