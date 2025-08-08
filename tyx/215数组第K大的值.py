@@ -5,6 +5,9 @@ class Solution:
     def quickselect(self,nums,k):
         '''
         快速选择：若枢轴落位的下标就是想要的len-k，则return，否则或左或右递归partition
+
+        1.主循环进行枢轴划分，得到其最后落位下标
+        2.若是，则；否则判断向左或向右递归枢轴划分
         :param nums:
         :param k:
         :return:
